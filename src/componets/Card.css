@@ -1,0 +1,16 @@
+.card {
+    height: 100%;
+    width: 100%; 
+    border-radius: 90px;
+    border-top: 1rem solid;
+    border-bottom:1rem solid;
+    text-align: center;
+    align-content: center;
+    display: grid;
+
+    background-color: rgb(245, 241, 10);
+    box-shadow: 0 60px 28px rgba(152, 10, 10, 0.25);
+  }
+
+
+
