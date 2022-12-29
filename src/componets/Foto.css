@@ -1,6 +1,11 @@
 .foto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    position:relative;
+    display: inline-flex;
+    top: 90px;
+    background: url("../images/foto.jpg");
+    background-size: 180px;
+    border-radius: 999px;
+    height: 180px;
+    width: 180px;
+    color:ivory
 }

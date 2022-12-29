@@ -1,24 +1,22 @@
 import React from "react";
 
-// import "./Foto.css";
+import "./Foto.css";
 
 const Foto = () => {
-    const styles = {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '25vh',
-        backgroundImage: "url(../images/foto.jpg)",
-
- 
-    };
+    // const styles = {
+    //     display: 'flex',
+    //     alignItems: 'center',
+    //     justifyContent: 'center',
+    //     height: '25vh',
+// };
 
     return (
-        <div style={styles}>
-        {/* // <div className="foto"> */}
-            <h2>Some content here</h2>
+        /* //  style={styles}> */
+        <div className="foto">
+            <h4></h4>
         </div>
     );
-}
+};
+
 
 export default Foto;
