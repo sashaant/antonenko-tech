@@ -3,7 +3,9 @@ import Card from './componets/Card';
 import Footer from './componets/Footer';
 import Navbar from './componets/Navbar';
 import Foto from './componets/Foto';
-import Mailto from './componets/Mailto';
+import AboutMe from './componets/AboutMe';
+// import Mailto from './componets/Mailto';
+
 
 const App = () => {
   return (

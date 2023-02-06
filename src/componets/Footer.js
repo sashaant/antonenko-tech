@@ -4,11 +4,10 @@ import './Footer.css';
 
 
 const Footer = () => {
-    const year = new Date().getFullYear();
 
     return (
         <div className="footer">
-        <p>{`© Sasha Antonenko, Kyiv, Ukraine ${year}`}</p>
+        <p>© Sasha Antonenko, Kyiv, Ukraine 2022</p>
         </div>
     );
     };

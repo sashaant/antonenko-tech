@@ -1,12 +1,27 @@
-.foto{
-    position:relative;
-    display: inline-flex;
-    top: 90px;
-    background: url("../images/foto.jpg");
-    background-size: 180px;
-    border-radius: 999px;
-    height: 180px;
-    width: 180px;
-    color:ivory;
-    margin-bottom: 10%;
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.foto img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .foto {
+        height: 500px;
+        
+    }
+}
+
+@media (max-width: 767px) {
+    .foto {
+        height: 200px;
+    }
 }

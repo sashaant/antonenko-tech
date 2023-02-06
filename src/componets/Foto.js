@@ -1,22 +1,16 @@
-import React from "react";
+
 
 import "./Foto.css";
+import foto from "../images/foto.jpg";
+
+import React from 'react';
 
 const Foto = () => {
-    // const styles = {
-    //     display: 'flex',
-    //     alignItems: 'center',
-    //     justifyContent: 'center',
-    //     height: '25vh',
-// };
-
     return (
-        /* //  style={styles}> */
         <div className="foto">
-            <h4></h4>
+            <img src={foto} alt="My Image" />
         </div>
     );
 };
-
 
 export default Foto;
