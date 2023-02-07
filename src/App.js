@@ -14,7 +14,6 @@ const App = () => {
       <Navbar/>
       <Foto/>
       <Card/>
-      <DataFromApi/>
       {/* <Mailto>Mail me!</Mailto> */}
       <Footer/>
     </div>
