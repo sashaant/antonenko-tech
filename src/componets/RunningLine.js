@@ -1,5 +1,5 @@
 import React from 'react';
-import './RunningLine.css';
+import '../Styles/RunningLine.css';
 
 const RunningLine = () => {
   return (
