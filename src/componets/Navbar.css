@@ -17,6 +17,20 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
+
+  .toggle-theme-button {
+  background-color: #0074D9;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.toggle-theme-button:hover {
+  background-color: #0059b3;
+}
   
   button:hover {
     background-color:#0e2233;

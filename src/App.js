@@ -6,8 +6,6 @@ import Foto from './componets/Foto';
 import RunningLine from './componets/RunningLine';
 
 
-// import Mailto from './componets/Mailto';
-
 
 const App = () => {
   return (
@@ -16,8 +14,6 @@ const App = () => {
       <RunningLine/>
       <Foto/>
       <Card/>
-      
-      {/* <Mailto>Mail me!</Mailto> */}
       <Footer/>
     </div>
   );
