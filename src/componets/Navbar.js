@@ -4,7 +4,7 @@ import "./Navbar.css";
 import React, { useState } from 'react';
 
 const Navbar = () => {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleDarkTheme = () => {
