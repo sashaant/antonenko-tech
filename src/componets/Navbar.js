@@ -1,35 +1,32 @@
-import React, { useState } from 'react';
-import "../Styles/Navbar.css";
+import React, { useState } from "react";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
-  const [showMenu, setShowMenu] = useState(false);
 
   const toggleDarkTheme = () => {
     setIsDarkTheme(!isDarkTheme);
   };
 
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
-
   return (
-    <nav className={`navbar ${isDarkTheme ? 'dark-theme' : ''}`}>
-      <div className="hamburger-menu" onClick={toggleMenu}>
-        <i className={`fas fa-bars ${showMenu ? 'open' : ''}`} />
+    <div>
+      <div className={`navbar ${isDarkTheme ? 'dark-theme' : ''}`}>
+        {/* <div className="navbar-foto"></div> */}
+        <div className="navbar-title">Sasha Antonenko</div>
+            {/* <button onClick={toggleDarkTheme}>
+            {isDarkTheme ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
+            </button> */}
+        {/* <div className="navbar-menu">
+          <ul>
+            <li>About</li>
+            <li>Podcast</li>
+            <li>Blog</li>
+          </ul>
+        </div> */}
       </div>
-      {showMenu && (
-        <ul className="menu-dropdown">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-      )}
-      <button onClick={toggleDarkTheme}>
-        {isDarkTheme ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
-      </button>
-    </nav>
+    </div>
   );
 };
+
 
 export default Navbar;

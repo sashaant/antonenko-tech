@@ -1,0 +1,25 @@
+.cookie-policy {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(212, 24, 24, 0.8);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookie-policy p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.cookie-policy button {
+  background-color: lightgray;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
