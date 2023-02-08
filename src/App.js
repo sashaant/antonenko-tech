@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactGA from 'react-ga';
 // import styled, { ThemeProvider } from "styled-components";
 // import { lightTheme, darkTheme, GlobalStyles } from "./themes/themes.js";
@@ -26,11 +26,11 @@ const App = () => {
   // const toggleDarkTheme = () => {
   //   setIsDarkTheme(!isDarkTheme);
   // };
-  const [theme, setTheme] = useState("light");
+  // const [theme, setTheme] = useState("light");
 
-  const themeToggler = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
-  };
+  // const themeToggler = () => {
+  //   theme === "light" ? setTheme("dark") : setTheme("light");
+  // };
 
 
   return (
