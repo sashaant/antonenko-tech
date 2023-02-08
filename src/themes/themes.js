@@ -15,3 +15,5 @@ export const GlobalStyles = createGlobalStyle`
 		background-color: ${(props) => props.theme.body};
 	}
 `;
+
+//add some npm svgo package
