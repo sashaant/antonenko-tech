@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactGA from 'react-ga';
-import styled, { ThemeProvider } from "styled-components";
-import { lightTheme, darkTheme, GlobalStyles } from "./themes/themes.js";
+// import styled, { ThemeProvider } from "styled-components";
+// import { lightTheme, darkTheme, GlobalStyles } from "./themes/themes.js";
 
 
 import Card from './componets/Card';
@@ -15,9 +15,9 @@ import CookiePolicy from './componets/CookiePolicy';
 const TRACKING_ID = "G-F8CE2RP8XW";
 ReactGA.initialize(TRACKING_ID);
 
-const StyledApp = styled.div`
-  color: ${(props) => props.theme.fontColor};
-`;
+// const StyledApp = styled.div`
+//   color: ${(props) => props.theme.fontColor};
+// `;
 
 
 const App = () => {
