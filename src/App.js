@@ -39,13 +39,12 @@ const App = () => {
         <RunningLine/>
         <Foto/>
         <Card/>
-            {/* <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+            <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
               <GlobalStyles />
               <StyledApp>
-                {/* Hello World 
                 <button onClick={() => themeToggler()}>Change Theme color</button>
               </StyledApp>
-            </ThemeProvider> */}
+            </ThemeProvider>
         <CookiePolicy/>
         <Footer/>
     </div>
