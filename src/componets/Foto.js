@@ -1,6 +1,9 @@
-import React from 'react';
-import "../Styles/Foto.css";
+
+
+import "./Foto.css";
 import foto from "../images/foto.jpg";
+
+import React from 'react';
 
 const Foto = () => {
     return (

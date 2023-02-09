@@ -1,5 +1,6 @@
 import React from 'react';
-import '../Styles/Card.css';
+
+import './Card.css';
 
 const Card = () => {
   const data ={
