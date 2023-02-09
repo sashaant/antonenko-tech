@@ -4,7 +4,7 @@ import '../Styles/RunningLine.css';
 const RunningLine = () => {
   return (
     <div className="running-line-container">
-      <marquee className="running-line">Support Ukraine 🇺🇦  Support Ukraine 🇺🇦  Support Ukraine 🇺🇦 </marquee>
+      <p class="moving-text">Support Ukraine 🇺🇦  Support Ukraine 🇺🇦  Support Ukraine 🇺🇦 </p>
     </div>
   );
 };
