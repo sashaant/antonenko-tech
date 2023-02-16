@@ -14,5 +14,7 @@
 @media only screen and (max-width: 768px) {
     .footer {
         font-size: 12px;
+        margin-top: 50px;
+        position: inherit;
     }
 }
