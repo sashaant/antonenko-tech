@@ -1,0 +1,21 @@
+body.dark-mode {
+    background-color: #0e2233;
+    color: #fff;
+  }
+  
+  .dark-mode-switch {
+    color: #fff;
+  }
+  
+  .dark-mode-switch label {
+    background-color: #555;
+  }
+  
+  .dark-mode-switch input:checked + .slider {
+    background-color: #ccc;
+  }
+  
+  .dark-mode-switch input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
