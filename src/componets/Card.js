@@ -34,7 +34,7 @@ const Card = () => {
              <br/>
             <Button href="https://savelife.in.ua/en/donate-en/#donate-army-card-monthlyhools.com/" variant="contained" color="success">
 
-              DONATE TO SAVEINLIFE CHARITY FUND
+              DONATE TO SAVELIFE CHARITY FUND
             </Button>
             </Stack>
             
