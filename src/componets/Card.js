@@ -12,8 +12,8 @@ const Card = () => {
 
   return(
     <div className="card" >
-        <h1>{data.name}</h1>
-            <p>JS evangelist in development  and testing apps  <br/>Making imposible at JABRA <br/><br/> I take great pride in being a member of a team that continually strives to push the limits of what is possible. Our primary objective is to generate inventive solutions that have a meaningful impact on people's lives.</p>
+        {/* <h1>{data.name}</h1> */}
+            {/* <p>JS evangelist in development  and testing apps  <br/>Making imposible at JABRA <br/><br/> I take great pride in being a member of a team that continually strives to push the limits of what is possible. Our primary objective is to generate inventive solutions that have a meaningful impact on people's lives.</p> */}
              <br/>
              <br/>
              <br/>

@@ -1,0 +1,82 @@
+/* HeroComponent.css */
+.hero_texts {
+    /* Add styles specific to the hero_texts class */
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .hero_image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .rounded-full {
+    border-radius: 50%;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .mt-8 {
+    margin-top: 2rem;
+  }
+  
+  .profile-pic {
+    width: 100%;
+    max-width: 200px;
+    border: 3px solid white;
+  }
+  
+  h1.name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: black; /* Color for Debbie */
+  }
+  
+  .dark:text-white {
+    color: white; /* Color for Debbie in dark mode */
+  }
+  
+  .text-primary {
+    color: red; /* Color for O'Brien */
+  }
+  
+
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  /* .subtitle {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7); /* Update this color for a light theme */
+   */
+  
+  .mb-20 {
+    margin-bottom: 5rem;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  a {
+    color: #3490dc; /* Update this color to match the primary color on your site */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  
+  
