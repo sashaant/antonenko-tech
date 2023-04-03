@@ -6,18 +6,18 @@ import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 
 const Card = () => {
-  const data ={
-    "name": "SASHA ANTONENKO",    
-  }
+  // const data ={
+  //   "name": "SASHA ANTONENKO",    
+  // }
 
   return(
     <div className="card" >
         {/* <h1>{data.name}</h1> */}
             {/* <p>JS evangelist in development  and testing apps  <br/>Making imposible at JABRA <br/><br/> I take great pride in being a member of a team that continually strives to push the limits of what is possible. Our primary objective is to generate inventive solutions that have a meaningful impact on people's lives.</p> */}
+             {/* <br/>
              <br/>
              <br/>
-             <br/>
-             <br/>
+             <br/> */}
               {/* <Box sx={{ typography: 'body1' }}>
              <Link href="https://war.ukraine.ua/support-ukraine/">Find out how you can help.</Link>
              </Box> */}
