@@ -1,7 +1,21 @@
-/* Default Light Mode */
-body {
+/* Global Styles - Light/Dark Mode for Main Content Only */
+
+/* HTML and Body setup for sticky footer */
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+/* Root element needs to be flex container */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Default Light Mode */
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -20,8 +34,11 @@ body.dark-mode {
 
 /* Main content wrapper */
 .main-content {
+  flex: 1;
   min-height: 100vh;
   background-color: inherit;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Card/Component backgrounds */

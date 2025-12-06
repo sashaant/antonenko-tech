@@ -1,23 +1,23 @@
 import React from 'react';
 import Card from '../componets/Card';
 import Footer from '../componets/Footer';
-
-
-import DarkModeSwitch from '../componets/ThemeSwitcher';
 import Header from '../componets/Header';
-
-
+import HeroComponent from '../componets/HeroComponent';
 
 const MainPage = () => {
  
-    return (
-        <div>
-            <Header/>
-            <DarkModeSwitch />    
-            <Card/>
-            <Footer/>
-        </div>
-    );
-    }
+  return (
+    <>
+      <Header/>
+      
+      <main>
+        <HeroComponent/>
+        <Card/>
+      </main>
+      
+      <Footer/>
+    </>
+  );
+}
 
 export default MainPage;
