@@ -16,18 +16,19 @@ function Header() {
         {/* Profile Section - Centered */}
         <div className="header-profile">
           <a href="/" className="header-brand">
-            <img src={profileImage} alt="Sasha Antonenko" className="header-avatar" />
-            <span className="header-name">Sasha Antonenko</span>
+            <img src={profileImage} alt="Oleksandr Antonenko" className="header-avatar" />
+            <span className="header-name">Oleksandr Antonenko</span>
           </a>
         </div>
 
         {/* Desktop Navigation - Centered */}
-        <nav className="header-nav desktop-nav">
-          <a href="#about" className="nav-link">About</a>
-          <a href="#projects" className="nav-link">Projects</a>
-          <a href="#blog" className="nav-link">Blog</a>
-          <a href="#contact" className="nav-link">Contact</a>
-        </nav>
+       <nav className="header-nav desktop-nav">
+  <a href="#about" className="nav-link" onClick={() => setShowMenu(false)}>About</a>
+          <a href="#videos" className="nav-link" onClick={() => setShowMenu(false)}>Videos</a>
+          <a href="#podcasts" className="nav-link" onClick={() => setShowMenu(false)}>Podcasts</a>
+          <a href="#courses" className="nav-link" onClick={() => setShowMenu(false)}>Courses</a>
+          <a href="#blog" className="nav-link" onClick={() => setShowMenu(false)}>Blog</a>
+</nav>
 
         {/* Right Section: Social Icons + Theme Switcher */}
         <div className="header-right">
@@ -95,10 +96,12 @@ function Header() {
 
       {/* Mobile Navigation */}
       <nav className={`mobile-nav ${showMenu ? 'show' : ''}`}>
-        <a href="#about" className="nav-link" onClick={() => setShowMenu(false)}>About</a>
-        <a href="#projects" className="nav-link" onClick={() => setShowMenu(false)}>Projects</a>
-        <a href="#blog" className="nav-link" onClick={() => setShowMenu(false)}>Blog</a>
-        <a href="#contact" className="nav-link" onClick={() => setShowMenu(false)}>Contact</a>
+          <a href="#about" className="nav-link" onClick={() => setShowMenu(false)}>About</a>
+          <a href="#videos" className="nav-link" onClick={() => setShowMenu(false)}>Videos</a>
+          <a href="#podcasts" className="nav-link" onClick={() => setShowMenu(false)}>Podcasts</a>
+          <a href="#courses" className="nav-link" onClick={() => setShowMenu(false)}>Courses</a>
+          <a href="#blog" className="nav-link" onClick={() => setShowMenu(false)}>Blog</a>
+          
         
         {/* Mobile Social Icons + Theme Switcher */}
         <div className="mobile-bottom-row">

@@ -1,4 +1,4 @@
-/* Theme Switcher Styles */
+/* Theme Switcher Styles - Always on Dark Background */
 
 .theme-switcher {
   display: flex;
@@ -7,30 +7,20 @@
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #4a5568;
+  color: rgba(255, 255, 255, 0.8);
   padding: 0;
   position: relative;
   overflow: hidden;
 }
 
-body.dark-mode .theme-switcher {
-  border-color: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.8);
-}
-
 .theme-switcher:hover {
-  border-color: #1a1a1a;
-  background: rgba(0, 0, 0, 0.03);
-  transform: translateY(-2px);
-}
-
-body.dark-mode .theme-switcher:hover {
   border-color: rgba(255, 255, 255, 0.4);
   background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 .theme-icon {

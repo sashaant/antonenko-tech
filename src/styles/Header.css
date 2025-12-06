@@ -1,19 +1,13 @@
-/* Modern Header Styles - Centered Layout with Theme Switcher */
+/* Modern Header Styles - Always Dark */
 
 .modern-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(17, 24, 39, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-}
-
-/* Dark mode support */
-body.dark-mode .modern-header {
-  background: rgba(14, 34, 51, 0.95);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
 .header-container {
@@ -50,12 +44,8 @@ body.dark-mode .modern-header {
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   transition: transform 0.2s ease;
-}
-
-body.dark-mode .header-avatar {
-  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .header-brand:hover .header-avatar {
@@ -65,12 +55,8 @@ body.dark-mode .header-avatar {
 .header-name {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #1a1a1a;
-  letter-spacing: -0.02em;
-}
-
-body.dark-mode .header-name {
   color: #ffffff;
+  letter-spacing: -0.02em;
 }
 
 /* Desktop Navigation - Centered */
@@ -88,7 +74,7 @@ body.dark-mode .header-name {
 
 .nav-link {
   position: relative;
-  color: #4a5568;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 0.9375rem;
   font-weight: 500;
@@ -96,15 +82,7 @@ body.dark-mode .header-name {
   transition: color 0.2s ease;
 }
 
-body.dark-mode .nav-link {
-  color: rgba(255, 255, 255, 0.8);
-}
-
 .nav-link:hover {
-  color: #1a1a1a;
-}
-
-body.dark-mode .nav-link:hover {
   color: #ffffff;
 }
 
@@ -116,12 +94,8 @@ body.dark-mode .nav-link:hover {
   left: 0;
   width: 0;
   height: 2px;
-  background: #1a1a1a;
-  transition: width 0.3s ease;
-}
-
-body.dark-mode .nav-link::after {
   background: #ffffff;
+  transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
@@ -164,26 +138,17 @@ body.dark-mode .nav-link::after {
   justify-content: center;
   width: 36px;
   height: 36px;
-  color: #4a5568;
+  color: rgba(255, 255, 255, 0.7);
   background: transparent;
   border-radius: 50%;
   transition: all 0.2s ease;
   text-decoration: none;
 }
 
-body.dark-mode .social-link {
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .social-link:hover {
-  color: #1a1a1a;
-  background: rgba(0, 0, 0, 0.05);
-  transform: translateY(-2px);
-}
-
-body.dark-mode .social-link:hover {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 .social-link svg {
@@ -216,14 +181,10 @@ body.dark-mode .social-link:hover {
 .menu-icon {
   width: 100%;
   height: 2px;
-  background: #1a1a1a;
+  background: #ffffff;
   border-radius: 2px;
   transition: all 0.3s ease;
   transform-origin: center;
-}
-
-body.dark-mode .menu-icon {
-  background: #ffffff;
 }
 
 /* Animated hamburger to X */
@@ -255,10 +216,6 @@ body.dark-mode .menu-icon {
 .mobile-nav.show {
   max-height: 500px;
   padding: 1rem 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-body.dark-mode .mobile-nav.show {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -271,10 +228,6 @@ body.dark-mode .mobile-nav.show {
 }
 
 .mobile-nav .nav-link:hover {
-  background: rgba(0, 0, 0, 0.03);
-}
-
-body.dark-mode .mobile-nav .nav-link:hover {
   background: rgba(255, 255, 255, 0.05);
 }
 
@@ -289,13 +242,9 @@ body.dark-mode .mobile-nav .nav-link:hover {
   gap: 1rem;
   padding: 1rem 0;
   margin-top: 0.5rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
   justify-content: center;
-}
-
-body.dark-mode .mobile-bottom-row {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .mobile-socials {
