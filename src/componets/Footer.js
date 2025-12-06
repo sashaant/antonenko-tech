@@ -6,9 +6,10 @@ const Footer = () => {
 
   const navigationLinks = [
     { href: '#about', label: 'About' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#blog', label: 'Blog' },
-    { href: '#contact', label: 'Contact' }
+    { href: '#videos', label: 'Videos' },
+    { href: '#podcasts', label: 'Podcasts' },
+    { href: '#courses', label: 'Courses' },
+    { href: '#blog', label: 'Blog' }
   ];
 
   const socialLinks = [
