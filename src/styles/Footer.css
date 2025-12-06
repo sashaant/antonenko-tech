@@ -1,20 +1,132 @@
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    background-color: #0e2233;
-    color: #fff;
-    font-size: 14px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+.dark-footer {
+  background: rgba(17, 24, 39, 0.98);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5rem 0;
+  margin-top: auto;
 }
 
-@media only screen and (max-width: 768px) {
-    .footer {
-        font-size: 12px;
-        margin-top: 50px;
-        position: inherit;
-    }
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Navigation Links */
+.footer-nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-nav a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.footer-nav a:hover {
+  color: #ffffff;
+}
+
+/* Subtle underline on hover */
+.footer-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: width 0.3s ease;
+}
+
+.footer-nav a:hover::after {
+  width: 100%;
+}
+
+/* Social Icons */
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.footer-social-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.footer-social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Copyright */
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .dark-footer {
+    padding: 2rem 0;
+  }
+
+  .footer-container {
+    padding: 0 1.5rem;
+  }
+
+  .footer-nav {
+    gap: 1.5rem;
+  }
+
+  .footer-nav a {
+    font-size: 0.875rem;
+  }
+
+  .footer-socials {
+    gap: 0.75rem;
+  }
+
+  .footer-social-link {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-social-link svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-copyright p {
+    font-size: 0.8125rem;
+  }
 }
