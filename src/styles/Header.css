@@ -1,5 +1,3 @@
-/* Modern Header Styles - Centered Layout with Social Icons */
-
 .modern-header {
   position: sticky;
   top: 0;
@@ -128,10 +126,23 @@ body.dark-mode .nav-link::after {
   width: 100%;
 }
 
-/* Social Icons Section - Centered */
+/* Right Section - Social Icons + Theme Switcher */
+.header-right {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .header-right {
+    display: flex;
+  }
+}
+
+/* Social Icons Section */
 .header-socials {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   justify-content: center;
 }
 
@@ -240,7 +251,7 @@ body.dark-mode .menu-icon {
 }
 
 .mobile-nav.show {
-  max-height: 400px;
+  max-height: 500px;
   padding: 1rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
@@ -269,16 +280,25 @@ body.dark-mode .mobile-nav .nav-link:hover {
   display: none;
 }
 
-/* Mobile Social Icons */
-.mobile-socials {
+/* Mobile Bottom Row - Social Icons + Theme Switcher */
+.mobile-bottom-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   padding: 1rem 0;
   margin-top: 0.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   width: 100%;
+  justify-content: center;
 }
 
-body.dark-mode .mobile-socials {
+body.dark-mode .mobile-bottom-row {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-socials {
+  display: flex;
+  gap: 0.75rem;
 }
 
 @media (min-width: 768px) {
@@ -304,17 +324,28 @@ body.dark-mode .mobile-socials {
   }
 }
 
-/* Desktop Layout - All centered vertically */
+/* Desktop Layout - All centered vertically with spacing */
 @media (min-width: 768px) {
   .header-container {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 3rem;
     padding: 1.25rem 2rem;
+    max-width: 1400px;
   }
 
   .header-profile {
     width: auto;
+    flex: 0 0 auto;
+  }
+
+  .desktop-nav {
+    flex: 1;
+    justify-content: center;
+    margin: 0 3rem;
+  }
+
+  .header-right {
+    flex: 0 0 auto;
   }
 }
