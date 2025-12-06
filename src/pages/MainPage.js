@@ -3,7 +3,7 @@ import Card from '../componets/Card';
 import Footer from '../componets/Footer';
 
 
-import DarkModeSwitch from '../componets/DarkModeSwitch';
+import DarkModeSwitch from '../componets/ThemeSwitcher';
 import Header from '../componets/Header';
 import HeroComponent from '../componets/HeroComponent';
 

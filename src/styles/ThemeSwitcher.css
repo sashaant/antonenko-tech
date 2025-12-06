@@ -1,0 +1,106 @@
+/* Theme Switcher Styles */
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #4a5568;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+body.dark-mode .theme-switcher {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.theme-switcher:hover {
+  border-color: #1a1a1a;
+  background: rgba(0, 0, 0, 0.03);
+  transform: translateY(-2px);
+}
+
+body.dark-mode .theme-switcher:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.theme-icon {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Sun icon animation */
+.sun-icon {
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Moon icon subtle animation */
+.moon-icon {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Hover effects */
+.theme-switcher:hover .theme-icon {
+  transform: scale(1.1);
+}
+
+/* Stop rotation on hover */
+.theme-switcher:hover .sun-icon {
+  animation-play-state: paused;
+}
+
+/* Responsive sizing */
+@media (max-width: 767px) {
+  .theme-switcher {
+    width: 36px;
+    height: 36px;
+  }
+
+  .theme-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .sun-icon {
+    animation: none;
+  }
+  
+  .moon-icon {
+    animation: none;
+  }
+  
+  .theme-switcher:hover .theme-icon {
+    transform: none;
+  }
+}
