@@ -1,8 +1,6 @@
 import React from 'react';
 import Card from '../componets/Card';
 import Footer from '../componets/Footer';
-
-
 import DarkModeSwitch from '../componets/ThemeSwitcher';
 import Header from '../componets/Header';
 

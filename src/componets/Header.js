@@ -3,6 +3,8 @@ import ThemeSwitcher from './ThemeSwitcher';
 import '../styles/Header.css';
 import profileImage from '../images/foto.jpg';
 
+
+
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
