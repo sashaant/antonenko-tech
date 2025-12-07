@@ -11,9 +11,11 @@ const MainPage = () => {
     return (
         <div>
             <Header/>
-            <DarkModeSwitch />    
-            <Card/>
-            <Footer/>
+            <DarkModeSwitch /> 
+            <main>   
+                <Card/> 
+            </main>   
+             <Footer/>
         </div>
     );
     }
