@@ -1,96 +1,32 @@
-/* Theme Switcher Styles - Always on Dark Background */
-
 .theme-switcher {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   padding: 0;
-  position: relative;
-  overflow: hidden;
+  transition: all 0.2s ease;
 }
 
 .theme-switcher:hover {
-  border-color: rgba(255, 255, 255, 0.4);
   background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
+  color: #ffffff;
 }
 
-.theme-icon {
-  width: 20px;
-  height: 20px;
-  transition: all 0.3s ease;
+body.dark-mode .theme-switcher {
+  color: #ffffff;
 }
 
-/* Sun icon animation */
-.sun-icon {
-  animation: rotate 20s linear infinite;
+body.dark-mode .theme-switcher:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Moon icon subtle animation */
-.moon-icon {
-  animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.8;
-  }
-}
-
-/* Hover effects */
-.theme-switcher:hover .theme-icon {
-  transform: scale(1.1);
-}
-
-/* Stop rotation on hover */
-.theme-switcher:hover .sun-icon {
-  animation-play-state: paused;
-}
-
-/* Responsive sizing */
-@media (max-width: 767px) {
-  .theme-switcher {
-    width: 36px;
-    height: 36px;
-  }
-
-  .theme-icon {
-    width: 18px;
-    height: 18px;
-  }
-}
-
-/* Reduced motion for accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .sun-icon {
-    animation: none;
-  }
-  
-  .moon-icon {
-    animation: none;
-  }
-  
-  .theme-switcher:hover .theme-icon {
-    transform: none;
-  }
+.theme-switcher svg {
+  display: block;
 }
