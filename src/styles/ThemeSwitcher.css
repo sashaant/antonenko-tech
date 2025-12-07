@@ -1,51 +1,32 @@
 .theme-switcher {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 50%;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  color: #4a5568;
+  color: #ffffff;
   padding: 0;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .theme-switcher:hover {
-  border-color: #1a1a1a;
-  background: rgba(0, 0, 0, 0.05);
-  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 
 body.dark-mode .theme-switcher {
-  border-color: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
 }
 
 body.dark-mode .theme-switcher:hover {
-  border-color: rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }
 
-.theme-icon {
-  width: 20px;
-  height: 20px;
-  transition: transform 0.3s ease;
-}
-
-.theme-switcher:hover .theme-icon {
-  transform: scale(1.1);
-}
-
-@media (max-width: 767px) {
-  .theme-switcher {
-    width: 36px;
-    height: 36px;
-  }
-  .theme-icon {
-    width: 18px;
-    height: 18px;
-  }
+.theme-switcher svg {
+  display: block;
 }
