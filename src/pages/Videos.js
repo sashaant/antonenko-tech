@@ -7,16 +7,16 @@ const Videos = () => {
     {
       title: 'JavaScript Testing Best Practices',
       description: 'Learn essential testing patterns for modern JavaScript applications',
-      date: 'December 2024',
+      date: 'December 2025',
       tags: ['javascript', 'testing', 'automation'],
       link: 'https://youtube.com',
       image: 'https://via.placeholder.com/400x225/3b82f6/ffffff?text=Video+1'
     },
     {
-      title: 'Building Modern React Apps',
+      title: 'MCP with AI Tools',
       description: 'A comprehensive guide to building production-ready React applications',
-      date: 'November 2024',
-      tags: ['react', 'frontend', 'webdev'],
+      date: 'November 2025',
+      tags: ['ai', 'mcp', 'web3'],
       link: 'https://youtube.com',
       image: 'https://via.placeholder.com/400x225/3b82f6/ffffff?text=Video+2'
     }
