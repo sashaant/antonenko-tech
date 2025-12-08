@@ -1,14 +1,16 @@
 import React from 'react';
-import '../styles/Footer.css';
+import { Link } from 'react-router-dom';
+import '../../styles/Footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const navigationLinks = [
-    { href: '#about', label: 'About' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#blog', label: 'Blog' },
-    { href: '#contact', label: 'Contact' }
+    { to: '/about', label: 'About' },
+    { to: '/videos', label: 'Videos' },
+    { to: '/podcasts', label: 'Podcasts' },
+    { to: '/courses', label: 'Courses' },
+    { to: '/blog', label: 'Blog' }
   ];
 
   const socialLinks = [
@@ -45,16 +47,14 @@ const Footer = () => {
   return (
     <footer className="dark-footer">
       <div className="footer-container">
-        {/* Navigation Links */}
         <nav className="footer-nav" aria-label="Footer navigation">
           {navigationLinks.map((link) => (
-            <a key={link.href} href={link.href}>
+            <Link key={link.to} to={link.to}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
-        {/* Social Icons */}
         <div className="footer-socials" aria-label="Social media links">
           {socialLinks.map((social) => (
             <a
@@ -72,7 +72,6 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Copyright */}
         <div className="footer-copyright">
           <p>© {currentYear} Oleksandr Antonenko, Kyiv, Ukraine</p>
         </div>

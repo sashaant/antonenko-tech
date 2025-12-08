@@ -17,12 +17,9 @@ const HeroSection = () => {
           >
             JABRA
           </a>
-          <a 
-            href="#" 
-            className="badge"
-          >
+          <span className="badge">
             Test Automation Expert
-          </a>
+          </span>
         </div>
       </div>
     </section>

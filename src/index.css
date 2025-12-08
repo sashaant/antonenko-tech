@@ -20,9 +20,19 @@ body {
 }
 
 main {
-  /* flex: 1 0 auto;
-  width: 100%; */
-  padding-bottom: 200px;
+  flex: 1 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > * {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 footer {
@@ -52,4 +62,12 @@ body.dark-mode {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main > * {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }

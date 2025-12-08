@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import ThemeSwitcher from './ThemeSwitcher';
-import '../styles/Header.css';
-import profileImage from '../images/foto.jpg';
-
-
+import { Link } from 'react-router-dom';
+import ThemeSwitcher from '../ThemeSwitcher';
+import '../../styles/Header.css';
+import profileImage from '../../images/foto.jpg';
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -15,26 +14,22 @@ function Header() {
   return (
     <header className="modern-header">
       <div className="header-container">
-        {/* Profile Section - Centered */}
         <div className="header-profile">
-          <a href="/" className="header-brand">
+          <Link to="/" className="header-brand">
             <img src={profileImage} alt="Oleksandr Antonenko" className="header-avatar" />
             <span className="header-name">Oleksandr Antonenko</span>
-          </a>
+          </Link>
         </div>
 
-        {/* Desktop Navigation - Centered */}
-       <nav className="header-nav desktop-nav">
-  <a href="#about" className="nav-link" onClick={() => setShowMenu(false)}>About</a>
-          <a href="#videos" className="nav-link" onClick={() => setShowMenu(false)}>Videos</a>
-          <a href="#podcasts" className="nav-link" onClick={() => setShowMenu(false)}>Podcasts</a>
-          <a href="#courses" className="nav-link" onClick={() => setShowMenu(false)}>Courses</a>
-          <a href="#blog" className="nav-link" onClick={() => setShowMenu(false)}>Blog</a>
-</nav>
+        <nav className="header-nav desktop-nav">
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/videos" className="nav-link">Videos</Link>
+          <Link to="/podcasts" className="nav-link">Podcasts</Link>
+          <Link to="/courses" className="nav-link">Courses</Link>
+          <Link to="/blog" className="nav-link">Blog</Link>
+        </nav>
 
-        {/* Right Section: Social Icons + Theme Switcher */}
         <div className="header-right">
-          {/* Social Icons */}
           <div className="header-socials desktop-socials">
             <a 
               href="https://github.com/sashaant" 
@@ -48,7 +43,7 @@ function Header() {
               </svg>
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://www.linkedin.com/in/oleksandr-antonenko-81a1a6125/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-link"
@@ -80,11 +75,9 @@ function Header() {
             </a>
           </div>
 
-          {/* Theme Switcher */}
           <ThemeSwitcher />
         </div>
 
-        {/* Mobile Menu Button */}
         <button 
           className={`menu-toggle ${showMenu ? 'active' : ''}`}
           onClick={handleMenuClick}
@@ -96,16 +89,13 @@ function Header() {
         </button>
       </div>
 
-      {/* Mobile Navigation */}
       <nav className={`mobile-nav ${showMenu ? 'show' : ''}`}>
-          <a href="#about" className="nav-link" onClick={() => setShowMenu(false)}>About</a>
-          <a href="#videos" className="nav-link" onClick={() => setShowMenu(false)}>Videos</a>
-          <a href="#podcasts" className="nav-link" onClick={() => setShowMenu(false)}>Podcasts</a>
-          <a href="#courses" className="nav-link" onClick={() => setShowMenu(false)}>Courses</a>
-          <a href="#blog" className="nav-link" onClick={() => setShowMenu(false)}>Blog</a>
-          
+        <Link to="/about" className="nav-link" onClick={() => setShowMenu(false)}>About</Link>
+        <Link to="/videos" className="nav-link" onClick={() => setShowMenu(false)}>Videos</Link>
+        <Link to="/podcasts" className="nav-link" onClick={() => setShowMenu(false)}>Podcasts</Link>
+        <Link to="/courses" className="nav-link" onClick={() => setShowMenu(false)}>Courses</Link>
+        <Link to="/blog" className="nav-link" onClick={() => setShowMenu(false)}>Blog</Link>
         
-        {/* Mobile Social Icons + Theme Switcher */}
         <div className="mobile-bottom-row">
           <div className="header-socials mobile-socials">
             <a 
@@ -120,7 +110,7 @@ function Header() {
               </svg>
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://www.linkedin.com/in/oleksandr-antonenko-81a1a6125/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-link"
