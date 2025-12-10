@@ -4,33 +4,6 @@ import ContentSection from '../components/ContentSection';
 import ContentCard from '../components/ContentCard';
 
 const Home = () => {
-  const recentVideos = [
-    {
-      title: 'JavaScript Testing Best Practices',
-      description: 'Learn essential testing patterns for modern JavaScript applications',
-      date: 'December 2024',
-      tags: ['javascript', 'testing', 'automation'],
-      link: 'https://youtube.com',
-      image: 'https://via.placeholder.com/400x225/3b82f6/ffffff?text=Video+1'
-    },
-    {
-      title: 'Building Modern React Apps',
-      description: 'A comprehensive guide to building production-ready React applications',
-      date: 'November 2024',
-      tags: ['react', 'frontend', 'webdev'],
-      link: 'https://youtube.com',
-      image: 'https://via.placeholder.com/400x225/3b82f6/ffffff?text=Video+2'
-    },
-    {
-      title: 'Test Automation with Playwright',
-      description: 'Complete tutorial on end-to-end testing with Playwright',
-      date: 'November 2024',
-      tags: ['playwright', 'testing', 'e2e'],
-      link: 'https://youtube.com',
-      image: 'https://via.placeholder.com/400x225/3b82f6/ffffff?text=Video+3'
-    }
-  ];
-
   const recentPosts = [
     {
       title: 'Getting Started with Test Automation',
@@ -58,24 +31,6 @@ const Home = () => {
   return (
     <>
       <HeroSection />
-
-      <ContentSection 
-        title="Recent Videos" 
-        linkUrl="/videos"
-        linkText="View all videos"
-      >
-        {recentVideos.map((video, index) => (
-          <ContentCard
-            key={index}
-            title={video.title}
-            description={video.description}
-            date={video.date}
-            tags={video.tags}
-            link={video.link}
-            image={video.image}
-          />
-        ))}
-      </ContentSection>
 
       <ContentSection 
         title="Recent Blog Posts" 
