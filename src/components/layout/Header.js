@@ -23,9 +23,6 @@ function Header() {
 
         <nav className="header-nav desktop-nav">
           <Link to="/about" className="nav-link">About</Link>
-          <Link to="/videos" className="nav-link">Videos</Link>
-          <Link to="/podcasts" className="nav-link">Podcasts</Link>
-          <Link to="/courses" className="nav-link">Courses</Link>
           <Link to="/blog" className="nav-link">Blog</Link>
         </nav>
 
@@ -43,7 +40,7 @@ function Header() {
               </svg>
             </a>
             <a 
-              href="https://www.linkedin.com/in/oleksandr-antonenko-81a1a6125/" 
+              href="https://www.linkedin.com/in/antsasha/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-link"
@@ -54,11 +51,11 @@ function Header() {
               </svg>
             </a>
             <a 
-              href="https://twitter.com/yourusername" 
+              href="https://x.com/7antonenko" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-link"
-              aria-label="Twitter"
+              aria-label="X (Twitter)"
             >
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -91,9 +88,6 @@ function Header() {
 
       <nav className={`mobile-nav ${showMenu ? 'show' : ''}`}>
         <Link to="/about" className="nav-link" onClick={() => setShowMenu(false)}>About</Link>
-        <Link to="/videos" className="nav-link" onClick={() => setShowMenu(false)}>Videos</Link>
-        <Link to="/podcasts" className="nav-link" onClick={() => setShowMenu(false)}>Podcasts</Link>
-        <Link to="/courses" className="nav-link" onClick={() => setShowMenu(false)}>Courses</Link>
         <Link to="/blog" className="nav-link" onClick={() => setShowMenu(false)}>Blog</Link>
         
         <div className="mobile-bottom-row">
@@ -110,7 +104,7 @@ function Header() {
               </svg>
             </a>
             <a 
-              href="https://www.linkedin.com/in/oleksandr-antonenko-81a1a6125/" 
+              href="https://www.linkedin.com/in/antsasha/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-link"
@@ -121,11 +115,11 @@ function Header() {
               </svg>
             </a>
             <a 
-              href="https://twitter.com/yourusername" 
+              href="https://x.com/7antonenko" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-link"
-              aria-label="Twitter"
+              aria-label="X (Twitter)"
             >
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
